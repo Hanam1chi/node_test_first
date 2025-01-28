@@ -1,0 +1,15 @@
+{
+    "name": "Python Dev Container",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash"
+        }
+      }
+    },
+    "postStartCommand": "Xvfb :99 -screen 0 1280x1024x16 & export DISPLAY=:99"
+  }
+  
